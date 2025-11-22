@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- اسم المشروع -->
+    <title>Zoor – QR Events Platform</title>
+
+    <!-- موبايل & ريسبونسف -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- تحسين السيو للمشروع -->
+    <meta name="description"
+      content="منصة Zoor للدعوات الذكية – إنشاء دعوات، إرسال QR، تتبّع الزوار، إدارة الفعاليات بسهولة وبأسلوب Glowing Glassy حديث.">
+
+    <!-- دعم الثيمات (فاتح / داكن) -->
+    <meta name="color-scheme" content="light dark" />
+
+    <!-- فافيكون -->
+    <link rel="icon" type="image/png" href="/zoor-icon.png" />
+
+    <!-- خط عصري (تقدر أغيره لاحقاً) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- مساند للتوجّه (RTL/LTR switching) -->
+    <script>
+      // قراءة اللغة من localStorage
+      const lang = localStorage.getItem("zoor-lang") || "ar";
+
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+    </script>
+  </head>
+
+  <body class="bg-zoor-navy font-tajawal">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

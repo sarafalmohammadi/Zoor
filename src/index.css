@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+@layer components {
+  body {
+    @apply bg-zoor-navy text-zoor-pearl font-sans;
+  }
+
+  .glass-panel {
+    @apply bg-white/10 border border-white/15 backdrop-blur-xl rounded-3xl;
+  }
+
+  .glass-strong {
+    @apply bg-white/10 border border-white/20 backdrop-blur-2xl rounded-3xl shadow-neon-aqua;
+  }
+
+  .glass-soft {
+    @apply bg-white/10 border border-white/10 backdrop-blur-xl rounded-2xl;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2 text-sm font-medium text-zoor-navy bg-zoor-aqua hover:bg-zoor-aqua/90 shadow-neon-aqua transition;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-2 text-sm font-medium text-zoor-pearl/80 border border-white/15 hover:bg-white/5 transition;
+  }
+
+  .input-glass {
+    @apply w-full rounded-2xl bg-white/10 border border-white/15 px-4 py-2.5 text-sm text-zoor-pearl placeholder:text-zoor-pearl/40 focus:outline-none focus:border-zoor-aqua focus:ring-1 focus:ring-zoor-aqua/80;
+  }
+
+  .badge-soft {
+    @apply inline-flex items-center rounded-full border border-white/20 bg-white/5 px-3 py-1 text-xs text-zoor-pearl/80;
+  }
+}
